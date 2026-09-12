@@ -1,0 +1,94 @@
+User-Agent: AdIdxBot
+User-Agent: Amazonbot
+User-Agent: Applebot
+User-Agent: AppleNewsBot
+User-agent: cohere-ai
+User-agent: EmailSiphon
+User-Agent: meta-externalagent
+Disallow: /
+
+User-agent: magpie-crawler
+User-agent: MindSpider
+User-agent: Pinterestbot
+User-agent: GPTBot
+User-agent: CCBot
+User-agent: ChatGPT-User
+User-agent: anthropic-ai
+User-agent: Claude-Webp
+User-agent: CCbot
+User-agent: FacebookBot
+User-agent: PiplBot
+Disallow: /
+
+User-agent: adsbot
+User-agent: AhrefsBot
+User-agent: BLEXBot
+User-agent: dotbot
+User agent: MTRobot
+User-agent: SemrushBot
+User-agent: SemrushBot-SA
+User-agent: SemrushBot-BA
+User-agent: SemrushBot-SI
+User-agent: SemrushBot-SWA
+User-agent: SemrushBot-CT
+User-agent: SemrushBot-BM
+User-agent: serpstatbot
+User-agent: Pandalytics
+User-agent: PageThing
+Disallow: /
+
+User-agent: AI2Bot
+User-agent: Ai2Bot-Dolma
+User-agent: Applebot-Extended
+User-agent: Bytespider
+User-agent: ClaudeBot
+User-agent: cohere-training-data-crawler
+User-agent: Crawlspace
+User-agent: Diffbot
+User-agent: DuckAssistBot
+User-agent: FriendlyCrawler
+User-agent: iaskspider/2.0
+User-agent: ICC-Crawler
+User-agent: ImagesiftBot
+User-agent: img2dataset
+User-agent: ISSCyberRiskCrawler
+User-agent: Kangaroo Bot
+User-agent: Meta-ExternalAgent
+User-agent: Meta-ExternalFetcher
+User-agent: OAI-SearchBot
+User-agent: omgili
+User-agent: omgilibot
+User-agent: PanguBot
+User-agent: PerplexityBot
+User-agent: PetalBot
+User-agent: Scrapy
+User-agent: SemrushBot-OCOB
+User-agent: Sidetrade indexer bot
+User-agent: Timpibot
+User-agent: VelenPublicWebCrawler
+User-agent: Webzio-Extended
+User-agent: YouBot
+Disallow: /
+
+User-agent: Googlebot
+User-agent: Googlebot-News
+User-agent: Googlebot-Image
+User-agent: Googlebot-Video
+User-agent: Storebot-Google
+User-agent: Google-InspectionTool
+User-agent: GoogleOther
+User-agent: GoogleOther-Image
+User-agent: GoogleOther-Video
+User-agent: Google-Extended
+User-agent: APIs-Google
+User-agent: AdsBot-Google-Mobile
+User-agent: AdsBot-Google
+User-agent: Mediapartners-Google
+User-agent: FeedFetcher-Google
+User-agent: GoogleProducer
+User-agent: GoogleProducer; (+http://goo.gl/7y4SX) 
+User-agent: google-speakr
+Disallow: /
+
+# Directories
+Disallow: /assets/

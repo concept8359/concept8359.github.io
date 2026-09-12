@@ -1,0 +1,494 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+/* Colors */
+
+html {
+  cursor: url("./assets/cursor.png"), default;
+}
+
+body {
+  background-color: hotpink;
+}
+
+.nav,
+footer a,
+.collapsible:not(:hover) {
+  background-color: rgb(99, 99, 99);
+}
+
+a:hover {}
+
+a {
+  color: hotpink;
+}
+
+.card,
+footer ul {
+  background-color: black;
+}
+
+.nav:hover,
+footer a:hover,
+button:hover {
+  text-shadow: 2px 1px black;
+  background-color: #0096c4;
+}
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Sue+Ellen+Francisco&display=swap');
+
+.indie-flower-regular {
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sue-ellen-francisco-regular {
+  font-family: "Sue Ellen Francisco", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sniglet-regular {
+  font-family: "Sniglet", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sniglet-extrabold {
+  font-family: "Sniglet", system-ui;
+  font-weight: 800;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Indie Flower", "Sue Ellen Francisco", "Trebuchet MS", cursive, sans-serif;
+}
+
+body,
+button {
+  font-family: "Sniglet", "Comic Sans MS", Consolas, sans-serif;
+}
+
+button {
+  text-shadow: 1px 1px black;
+}
+
+.subtitle {
+  font-style: italic;
+  font-size: .8em;
+}
+
+/* Other Stuff */
+
+#main {
+  padding-top: 5%;
+}
+
+.card {
+  margin: auto;
+  border: white 2px solid;
+}
+
+.card p {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+}
+
+body {
+  color: white;
+  margin: 0;
+  height: 100%;
+}
+
+.nav {
+  display: block;
+  width: 90%;
+  margin-left: 5%;
+  cursor: pointer;
+  border: white solid 1px;
+  padding: 20px;
+  margin-bottom: 10px;
+  font-size: 150%;
+  text-align: center;
+  color: white;
+  transition: transform .2s, box-shadow .2s;
+
+}
+
+.nav:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px white;
+}
+
+.collapsible {
+  width: 80%;
+  cursor: pointer;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+  font-size: 200%;
+  color: white;
+}
+
+.collapsible:after {
+  content: "\002B";
+  font-weight: bold;
+  float: right;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  float: right;
+  display: inline;
+  overflow: hidden;
+  margin-bottom: 30px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+body .card img {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid white;
+  text-align: left;
+  counter-reset: rowNumber;
+}
+
+/* Empty top left corner */
+table thead tr::before {
+  display: table-cell;
+  content: " ";
+}
+
+/* Numbered table rows */
+table tbody tr::before {
+  display: table-cell;
+  counter-increment: rowNumber;
+  content: counter(rowNumber) ".";
+  padding: .5em .3em .5em;
+  text-align: right;
+}
+
+table tr {
+  text-align: center;
+  padding: .5em .3em .5em;
+}
+
+table td:nth-child(even) {
+  background-color: #292929;
+}
+
+footer a {
+  text-align: center;
+}
+
+footer a:hover .social-static {
+  display: none;
+  position: relative;
+}
+
+footer a:not(:hover) .social-animation {
+  display: none;
+  position: relative;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer img {
+  width: 60px;
+}
+
+.social-title,
+.heading {
+  margin: auto;
+  text-align: center;
+  font-size: 200%;
+}
+
+@media screen and (min-width:320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+
+  h1 {
+    text-align: center;
+  }
+
+  body {
+    background-image: url(assets/background11.jpg);
+    background-color: black;
+  }
+
+  .card {
+    width: 90%;
+    padding-top: 2%;
+    border: none;
+    background: none;
+    margin-top: none;
+    min-height: auto;
+  }
+
+  #blinkies {
+    display: none;
+  }
+
+  footer ul {
+    list-style-type: none;
+    display: inline;
+  }
+
+  footer a {
+    display: flex;
+    width: 80%;
+    height: 100px;
+    margin: 0 auto 20px auto;
+    border: white solid 1px;
+    transition: transform .2s, box-shadow .2s;
+  }
+
+  footer a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px white;
+  }
+
+  footer li {
+    padding: 20px;
+  }
+
+  .heading {
+    font-style: italic;
+    font-size: x-large;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .news {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width:481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+
+@media screen and (min-width:641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+
+@media screen and (min-width:961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+
+
+  body {
+    background-image: url(./assets/background4.jpg);
+  }
+
+  /*
+        body::after {
+          content: '';
+          display: block;
+          height: 100px;
+        }
+          */
+
+  .card {
+    width: 75%;
+    padding: 2%;
+    border: white 10px solid;
+    border-radius: 25px;
+    background-color: black;
+    margin-bottom: 10px;
+    min-height: 500px;
+  }
+
+  .card h1 {
+    text-align: left;
+    margin: 0 5% 0;
+  }
+
+  .card .nav {
+    text-align: left;
+  }
+
+  #blinkies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #blinkies img,
+  #blinkies a {
+    height: 31px;
+  }
+
+  footer {
+    width: 70%;
+    margin: auto;
+  }
+
+  footer ul {
+    padding: 0;
+    display: flex;
+    border: 10px solid white;
+    border-radius: 25px;
+  }
+
+  footer li {
+    height: auto;
+  }
+
+  footer a {
+    border-radius: 15px;
+    border: none;
+    width: 20%;
+    margin: auto;
+    background-color: black;
+    justify-content: center;
+    transition: none;
+  }
+
+  /* along bottom of page
+
+  body {
+    position: relative;
+    height: 100vh;
+  }
+
+  footer ul {
+    border-top: 2px solid white;
+    margin-bottom: 0;
+    padding: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: Consolas;
+    position: absolute;
+    display: flex;
+  }
+
+  footer li {
+    height: auto;
+  }
+
+  footer a {
+    border: none;
+    width: 20%;
+    margin: auto;
+    background-color: black;
+    justify-content: center;
+    transition: none;
+  }
+
+  */
+
+  footer a:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .heading {
+    font-style: italic;
+    font-size: x-large;
+    margin-left: 5%;
+    text-align: left;
+  }
+
+  .news {
+    display: block;
+  }
+
+  /*
+        footer {
+          border-top: 2px solid white;
+          padding: 0;
+          margin-top: 50px;
+          width:100%;
+          vertical-align: middle;
+          font-family: Consolas;
+          position: absolute;
+         
+        }
+
+
+
+        footer ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+        }
+
+        footer ul li {
+          display: inline;
+          float: left;
+          padding: 0;
+          margin: auto;
+          line-height: 5em;
+
+          width: 20%;
+
+          text-align: center;
+          border: none;
+        }
+
+        */
+
+  footer .social-title,
+  footer .heading {
+    display: none;
+  }
+
+  /*
+
+        footer li + li::before {
+          content: " | ";
+        }
+
+        */
+
+  footer li div {
+    display: none;
+  }
+
+  .hide-on-mobile {
+    display: block;
+  }
+
+}
+
+
+@media screen and (min-width:1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+
+@media screen and (min-width:1281px) {
+  /* hi-res laptops and desktops */
+}
